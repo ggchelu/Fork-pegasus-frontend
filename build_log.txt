@@ -1,0 +1,44 @@
++ export ANDROID_SDK_ROOT=/Users/txl/Library/Android/sdk
++ ANDROID_SDK_ROOT=/Users/txl/Library/Android/sdk
++ export ANDROID_NDK_ROOT=/Users/txl/Library/Android/sdk/ndk/21.4.7075529
++ ANDROID_NDK_ROOT=/Users/txl/Library/Android/sdk/ndk/21.4.7075529
++ export ANDROID_NDK_HOME=/Users/txl/Library/Android/sdk/ndk/21.4.7075529
++ ANDROID_NDK_HOME=/Users/txl/Library/Android/sdk/ndk/21.4.7075529
++ export ANDROID_NDK_LATEST_HOME=/Users/txl/Library/Android/sdk/ndk/21.4.7075529
++ ANDROID_NDK_LATEST_HOME=/Users/txl/Library/Android/sdk/ndk/21.4.7075529
++ export ANDROID_NDK=/Users/txl/Library/Android/sdk/ndk/21.4.7075529
++ ANDROID_NDK=/Users/txl/Library/Android/sdk/ndk/21.4.7075529
++ export JAVA_HOME=/opt/homebrew/opt/openjdk@11
++ JAVA_HOME=/opt/homebrew/opt/openjdk@11
++ export QT_VERSION=5.15.2
++ QT_VERSION=5.15.2
++ export QT_INSTALL_DIR=/Users/txl/Qt
++ QT_INSTALL_DIR=/Users/txl/Qt
++ export QT_SRC_DIR=/Users/txl/Desktop/qt-everywhere-src-5.15.2
++ QT_SRC_DIR=/Users/txl/Desktop/qt-everywhere-src-5.15.2
++ export ANDROID_ABI=arm64-v8a
++ ANDROID_ABI=arm64-v8a
++ echo '=== Environment Variables ==='
+=== Environment Variables ===
++ echo 'ANDROID_SDK_ROOT: /Users/txl/Library/Android/sdk'
+ANDROID_SDK_ROOT: /Users/txl/Library/Android/sdk
++ echo 'ANDROID_NDK_ROOT: /Users/txl/Library/Android/sdk/ndk/21.4.7075529'
+ANDROID_NDK_ROOT: /Users/txl/Library/Android/sdk/ndk/21.4.7075529
++ echo 'JAVA_HOME: /opt/homebrew/opt/openjdk@11'
+JAVA_HOME: /opt/homebrew/opt/openjdk@11
++ echo 'QT_INSTALL_DIR: /Users/txl/Qt'
+QT_INSTALL_DIR: /Users/txl/Qt
++ echo 'QT_SRC_DIR: /Users/txl/Desktop/qt-everywhere-src-5.15.2'
+QT_SRC_DIR: /Users/txl/Desktop/qt-everywhere-src-5.15.2
++ echo 'ANDROID_ABI: arm64-v8a'
+ANDROID_ABI: arm64-v8a
++ echo ''
+
++ '[' '!' -d /Users/txl/Qt/5.15.2/android/bin ']'
++ echo '=== Building Qt 5.15.2 for Android ==='
+=== Building Qt 5.15.2 for Android ===
++ mkdir -p /Users/txl/Qt
++ cd /Users/txl/Desktop/qt-everywhere-src-5.15.2
++ '[' -f Makefile ']'
++ ./configure -prefix /Users/txl/Qt/5.15.2/android -opensource -confirm-license -release -xplatform android-clang -android-ndk /Users/txl/Library/Android/sdk/ndk/21.4.7075529 -android-sdk /Users/txl/Library/Android/sdk -android-ndk-platform android-30 -android-arch arm64-v8a -nomake tests -nomake examples -skip qtwebengine -skip qtwebview -skip qtpurchasing -no-warnings-are-errors
+./build_android.sh: ./configure: /bin/sh^M: bad interpreter: No such file or directory
